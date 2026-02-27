@@ -7,7 +7,7 @@ const setSEC = document.getElementById("set");
 const puzzelSEC = document.getElementById("puzzel");
 
 
-range.addEventListener("change", () => {
+range.addEventListener("input", () => {
     count.textContent = range.value;
     console.log(range.value);
 });
@@ -20,7 +20,7 @@ submitBTN.addEventListener("click", () => {
 
 function populate() {
     for(let i=0; i<LIST; i++) {
-        document.createElement('fig');
+        const fig = document.createElement('fig');
 
         here.appendChild(fig);
     }
