@@ -6,9 +6,8 @@ body {
     margin: 0;
 }
 
-#content {
+#puzzel {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 100vw;
 }
