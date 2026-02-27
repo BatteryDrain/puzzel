@@ -27,7 +27,7 @@ submitBTN.addEventListener("click", () => {
 
 function populate() {
     const tileSize = 50;
-    const cols = 6;
+    const cols = Math.floor(window.innerWidth/52);
 
     for (let i = 0; i < range.value; i++) {
 
