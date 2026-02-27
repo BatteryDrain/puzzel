@@ -5,3 +5,8 @@
 .hide {
     display: none;
 }
+
+figure {
+    background-color: blue;
+    border-radius: 15px;
+}
