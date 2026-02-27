@@ -8,6 +8,8 @@ const puzzelSEC = document.getElementById("puzzel");
 
 count.textContent = range.value;
 
+let LIST = [];
+
 // setSEC.seyle.width = window.innerWidth + "px";
 // setSEC.style.width = document.documentElement.innerWidth + "px";
 
@@ -23,10 +25,15 @@ submitBTN.addEventListener("click", () => {
         puzzelSEC.classList.toggle("hide");
         populate();
     }
+    for (let i = 0; i < range.value; i++) {
+        const col = i % cols;
+        const row = Math.floor(i / cols);
+        LIST.push([col, row]);
+    }
 });
 
 function populate() {
-    const tileSize = 50;
+    const tileSize = 52;
     const cols = Math.floor(window.innerWidth/52);
 
     for (let i = 0; i < range.value; i++) {
