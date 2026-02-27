@@ -29,7 +29,7 @@ function populate() {
     for(let i=0; i<range.value; i++) {
         const fig = document.createElement('figure');
             const foto = document.getElementById('img');
-            foto.src = assets/cat.webp;
+            foto.src = "assets/cat.webp";
             fig.appendChild(foto);
         here.appendChild(fig);
     }
