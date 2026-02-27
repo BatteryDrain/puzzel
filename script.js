@@ -8,6 +8,9 @@ const puzzelSEC = document.getElementById("puzzel");
 
 count.textContent = range.value;
 
+const tileSize = 52;
+const cols = Math.floor(window.innerWidth/52);
+
 let LIST = [];
 
 // setSEC.seyle.width = window.innerWidth + "px";
@@ -34,24 +37,21 @@ submitBTN.addEventListener("click", () => {
 });
 
 function populate() {
-    const tileSize = 52;
-    const cols = Math.floor(window.innerWidth/52);
 
     for (let i = 0; i < range.value; i++) {
 
         const fig = document.createElement('figure');
-        const foto = document.createElement('img');
-
         fig.id = "tile" + i;
-        foto.src = "assets/cat.webp";
+            const foto = document.createElement('img');
+            foto.src = "assets/cat.webp";
 
-        const col = i % cols;
-        const row = Math.floor(i / cols);
+            const col = i % cols;
+            const row = Math.floor(i / cols);
 
-        foto.style.left = `${-col * tileSize}px`;
-        foto.style.top  = `${-row * tileSize}px`;
+            foto.style.left = `${-col * tileSize}px`;
+            foto.style.top  = `${-row * tileSize}px`;
 
-        fig.appendChild(foto);
+            fig.appendChild(foto);
         here.appendChild(fig);
     }
 }
