@@ -9,7 +9,6 @@ body {
 #puzzel {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
 }
 
 .hide {
