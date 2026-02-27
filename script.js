@@ -30,6 +30,7 @@ submitBTN.addEventListener("click", () => {
         const row = Math.floor(i / cols);
         LIST.push([col, row]);
     }
+    console.log(LIST);
 });
 
 function populate() {
@@ -41,6 +42,7 @@ function populate() {
         const fig = document.createElement('figure');
         const foto = document.createElement('img');
 
+        fig.id = "tile" + i;
         foto.src = "assets/cat.webp";
 
         const col = i % cols;
