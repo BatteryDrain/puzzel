@@ -2,9 +2,15 @@
    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 #content {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 100vw;
 }
 
 .hide {
