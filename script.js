@@ -22,7 +22,7 @@ submitBTN.addEventListener("click", () => {
 });
 
 function populate() {
-    for(let i=0; i<LIST; i++) {
+    for(let i=0; i<range.value; i++) {
         const fig = document.createElement('figure');
             const img = document.getElementById('img');
             fig.appendChild(img);
