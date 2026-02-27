@@ -29,4 +29,6 @@ figure img {
     position: absolute;
     user-select: none;
     pointer-events: none;
+    width: 100vw;
+    height: auto;
 }
