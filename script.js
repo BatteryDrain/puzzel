@@ -6,6 +6,7 @@ const submitBTN =document.getElementById("submit");
 const setSEC = document.getElementById("set");
 const puzzelSEC = document.getElementById("puzzel");
 
+count.textContent = range.value;
 
 range.addEventListener("input", () => {
     count.textContent = range.value;
@@ -13,8 +14,11 @@ range.addEventListener("input", () => {
 });
 
 submitBTN.addEventListener("click", () => {
-    setSEC.classList.toggle("hide");
-    puzzelSEC.classList.toggle("hide");
+    if(count != "") {
+        setSEC.classList.toggle("hide");
+        puzzelSEC.classList.toggle("hide");
+        populate();
+    }
 });
 
 
