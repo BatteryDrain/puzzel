@@ -21,7 +21,7 @@ figure {
     margin: 1px;
     overflow: hidden;
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: blue;
 }
 
