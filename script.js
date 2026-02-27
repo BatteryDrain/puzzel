@@ -30,6 +30,9 @@ function populate() {
         const fig = document.createElement('figure');
             const foto = document.createElement('img');
             foto.src = "assets/cat.webp";
+            foto.style.position = "absolute";
+            foto.style.left = 0;
+            foto.style.top = 0;
             fig.appendChild(foto);
         here.appendChild(fig);
     }
