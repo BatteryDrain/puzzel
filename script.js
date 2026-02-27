@@ -8,7 +8,7 @@ const puzzelSEC = document.getElementById("puzzel");
 
 count.textContent = range.value;
 
-setSEC.width = window.innerWidth;
+setSEC.seyle.width = window.innerWidth;
 
 range.addEventListener("input", () => {
     count.textContent = range.value;
