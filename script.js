@@ -26,14 +26,23 @@ submitBTN.addEventListener("click", () => {
 });
 
 function populate() {
-    for(let i=0; i<range.value; i++) {
+    const tileSize = 50;
+    const cols = 6;
+
+    for (let i = 0; i < range.value; i++) {
+
         const fig = document.createElement('figure');
-            const foto = document.createElement('img');
-            foto.src = "assets/cat.webp";
-            foto.style.position = "absolute";
-            foto.style.left = 0;
-            foto.style.top = 0;
-            fig.appendChild(foto);
+        const foto = document.createElement('img');
+
+        foto.src = "assets/cat.webp";
+
+        const col = i % cols;
+        const row = Math.floor(i / cols);
+
+        foto.style.left = `${-col * tileSize}px`;
+        foto.style.top  = `${-row * tileSize}px`;
+
+        fig.appendChild(foto);
         here.appendChild(fig);
     }
 }
